@@ -13,3 +13,11 @@ install dependencies
 pip install -r requirements.txt
 ```
 
+```bash
+git init
+```
+```bash
+dvc init
+```
+
+dvc add input_data\WineQT.csv
