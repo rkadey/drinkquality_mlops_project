@@ -1,3 +1,5 @@
+# Drink Quality MLOPS project
+
 create an env
 ```bash
 conda create env
