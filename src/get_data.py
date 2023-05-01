@@ -8,9 +8,12 @@ import argparse
 
 
 def read_params(config_path):
-    with open(config_path) as yaml_file:
-        config = yaml.safe_load(yaml_file)
-    return config
+    try:
+        with open(config_path) as yaml_file:
+            config = yaml.safe_load(yaml_file)
+        return config
+    except Exception as e:
+        print(e)
 
 def get_data(config_path):
     config = read_params(config_path)
