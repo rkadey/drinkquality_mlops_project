@@ -1,7 +1,7 @@
 base:
 project_name: winequality-prediction
 random_state: 42
-target_col: TARGET
+target_col: quality
 
 data_source:
   s3_source: input_data/WineQT.csv
