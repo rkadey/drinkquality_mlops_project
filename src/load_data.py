@@ -7,13 +7,12 @@ from get_data import read_params_, get_data_
 def load_and_save(config_path):
     config = read_params_(config_path)
     df = get_data_(config_path)
-    #new_cols =  df.columns
-   # col.replace(" ", "_")
-    print(df)
+    new_cols = [col.replace(" ", "_") for col in df.columns] 
+    print(new_cols)
 
-    #raw_data_path= config["load_data"]["raw_dataset_csv"]
+   # raw_data_path= config["load_data"]["raw_dataset_csv"]
 
-    #df.to_csv(raw_data_path, sep=",", index=False, header=new_cols)
+   # df.to_csv(raw_data_path, sep=",", index=False, header=new_cols)
     
 if __name__ =="__main__":
     args = argparse.ArgumentParser()
